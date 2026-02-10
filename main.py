@@ -65,7 +65,6 @@ def match_url(s: str) -> bool:
     Match a simple HTTP or HTTPS URL.
     """
     return re.match(r'^(https?://)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(:\d+)?(/.*)?$', s) is not None
-import re
 
 def match_credit_card(s: str) -> bool:
     """
